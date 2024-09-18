@@ -1,38 +1,71 @@
-.App {
+main {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  padding: 40px 60px;
+  justify-content: space-around;
+}
+
+h1 {
   text-align: center;
+  padding: 48px;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
+  font-size: 48px;
+  color: #669a41;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskCreation-container {
+  width: 30%;
+  height: auto;
+  background: #222;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
+.taskList-container {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #97ca3f;
+.task-img {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    gap: 50px;
+    padding: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .taskCreation-container {
+    width: 100%;
+    height: auto;
+    background: #222;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+
+  .taskList-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .task-img {
+    display: none;
   }
 }

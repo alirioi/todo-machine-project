@@ -1,0 +1,19 @@
+.counter-title {
+  text-align: center;
+  padding: 0;
+  font-size: 42px;
+}
+
+.counter-container {
+  text-align: center;
+  font-size: 24px;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+.counter-container span {
+  font-weight: bold;
+  color: #669a41;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
+}

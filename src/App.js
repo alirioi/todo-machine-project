@@ -1,10 +1,11 @@
+import './App.css';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
+import { CreateTodoInput } from './CreateTodoInput';
 import { CreateTodoButton } from './CreateTodoButton';
-import './App.css';
-import React from 'react';
+import taskImg from './assets/task-image.gif';
 
 const defaultTodos = [
   { text: 'item numero 1', completed: false },
@@ -15,21 +16,30 @@ const defaultTodos = [
 
 function App() {
   return (
-    <React.Fragment>
-      <TodoCounter total={3} completed={1} />
-      <TodoSearch />
+    <>
+      <h1>TODO Machine</h1>
+      <main>
+        <section className="taskCreation-container">
+          <CreateTodoInput />
+          <CreateTodoButton />
+          <img src={taskImg} alt="task" className="task-img" />
+        </section>
+        <section className="taskList-container">
+          <TodoCounter total={3} completed={1} />
+          <TodoSearch />
 
-      <TodoList>
-        {defaultTodos.map((todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-          />
-        ))}
-      </TodoList>
-      <CreateTodoButton />
-    </React.Fragment>
+          <TodoList>
+            {defaultTodos.map((todo) => (
+              <TodoItem
+                key={todo.text}
+                text={todo.text}
+                completed={todo.completed}
+              />
+            ))}
+          </TodoList>
+        </section>
+      </main>
+    </>
   );
 }
 

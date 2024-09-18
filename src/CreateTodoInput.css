@@ -1,0 +1,15 @@
+label {
+  margin-bottom: 24px;
+  color: #669a41;
+  font-weight: bold;
+}
+
+.create-input {
+  background: #333;
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid #669a41;
+  padding: 10px;
+  width: 100%;
+  margin: 8px 0 24px;
+}
