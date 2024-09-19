@@ -8,7 +8,6 @@
   gap: 12px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   border: 2px solid transparent;
-  cursor: pointer;
   position: relative;
   width: 100%;
 }
@@ -30,6 +29,7 @@
   width: 24px;
   height: 24px;
   font-weight: bold;
+  font-size: 24px;
 }
 
 .Icon-check {
@@ -42,7 +42,6 @@
 }
 
 .Icon-delete {
-  color: #4caf50;
   position: absolute;
   top: -12px;
   right: 0;
@@ -50,4 +49,5 @@
 
 .Icon-delete:hover {
   color: #f44336;
+  transform: scale(1.2);
 }

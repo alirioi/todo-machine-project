@@ -18,6 +18,10 @@ input::placeholder {
   color: #9c9c9c;
 }
 
+input:focus {
+  outline-color: #56cd02;
+}
+
 .search-icon {
   height: 37px;
   padding: 6px;
