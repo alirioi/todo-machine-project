@@ -2,7 +2,7 @@ main {
   display: flex;
   gap: 24px;
   width: 100%;
-  padding: 40px 60px;
+  padding: 40px 0;
   justify-content: space-around;
 }
 
@@ -15,8 +15,8 @@ h1 {
 }
 
 .taskCreation-container {
-  width: 30%;
-  height: auto;
+  width: 370px;
+  height: 430px;
   background: #222;
   border-radius: 12px;
   padding: 40px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .taskList-container {
-  width: 40%;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,32 +40,44 @@ h1 {
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
 
+@media (max-width: 993px) {
+  .taskCreation-container {
+    width: 290px;
+    height: 385px;
+  }
+
+  .taskList-container {
+    width: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   main {
     flex-direction: column;
     gap: 50px;
-    padding: 24px;
+    padding: 24px 60px;
   }
 
   .taskCreation-container {
     width: 100%;
     height: auto;
-    background: #222;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-    position: relative;
   }
 
   .taskList-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 
   .task-img {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 42px;
   }
 }

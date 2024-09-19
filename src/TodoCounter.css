@@ -17,3 +17,13 @@
   color: #669a41;
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
+
+@media (max-width: 576px) {
+  .counter-title {
+    font-size: 36px;
+  }
+
+  .counter-container {
+    font-size: 20px;
+  }
+}
