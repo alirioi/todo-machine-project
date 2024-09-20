@@ -14,7 +14,8 @@
   padding-left: 45px;
 }
 
-input::placeholder {
+.search-input::placeholder {
+  font-family: 'Rubik', sans-serif;
   color: #9c9c9c;
 }
 
