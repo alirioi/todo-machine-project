@@ -1,11 +1,4 @@
-.counter-title {
-  color: #669a41;
-  text-align: center;
-  padding: 0;
-  font-size: 40px;
-}
-
-.counter-container {
+.todoCounter {
   text-align: center;
   font-size: 24px;
   padding: 0;
@@ -14,18 +7,14 @@
   text-wrap: balance;
 }
 
-.counter-container span {
+.todoCounter span {
   font-weight: bold;
   color: #669a41;
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
 
 @media (max-width: 576px) {
-  .counter-title {
-    font-size: 34px;
-  }
-
-  .counter-container {
+  .todoCounter {
     font-size: 20px;
   }
 }

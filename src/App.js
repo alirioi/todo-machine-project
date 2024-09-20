@@ -52,6 +52,7 @@ function App() {
         </section>
 
         <section className="taskList-container">
+          <h1 className="taskList-title">TODOs pendientes</h1>
           <TodoCounter total={totalTodos} completed={completedTodos} />
           <TodoSearch
             searchValue={searchValue}
