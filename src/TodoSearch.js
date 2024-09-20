@@ -2,9 +2,7 @@ import React from 'react';
 import './TodoSearch.css';
 import searchIcon from './assets/icons/search.svg';
 
-function TodoSearch() {
-  const [searchValue, setSearchValue] = React.useState('');
-
+function TodoSearch({ searchValue, setSearchValue }) {
   return (
     <div className="search-container">
       <img src={searchIcon} alt="search" className="search-icon" />

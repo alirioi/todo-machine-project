@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
@@ -8,13 +9,18 @@ import { CreateTodoButton } from './CreateTodoButton';
 import taskImg from './assets/task-image.gif';
 
 const defaultTodos = [
-  { text: 'item numero 1', completed: false },
-  { text: 'item numero 2', completed: true },
-  { text: 'item numero 3', completed: false },
-  { text: 'item numero 4', completed: true },
+  { text: 'Tarea numero 1', completed: false },
+  { text: 'Tarea numero 2', completed: true },
+  { text: 'Tarea numero 3', completed: true },
 ];
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  const completedTodos = todos.filter((todo) => !!todo.completed).length;
+  const totalTodos = todos.length;
+
   return (
     <>
       <h1>TODO Machine</h1>
@@ -24,9 +30,13 @@ function App() {
           <CreateTodoButton />
           <img src={taskImg} alt="task" className="task-img" />
         </section>
+
         <section className="taskList-container">
-          <TodoCounter total={3} completed={1} />
-          <TodoSearch />
+          <TodoCounter total={totalTodos} completed={completedTodos} />
+          <TodoSearch
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
 
           <TodoList>
             {defaultTodos.map((todo) => (
