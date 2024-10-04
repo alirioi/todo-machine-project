@@ -25,7 +25,9 @@ input:focus {
 
 .search-icon {
   height: 37px;
+  width: 37px;
   padding: 6px;
   position: absolute;
   left: 5px;
+  color: #669a41;
 }

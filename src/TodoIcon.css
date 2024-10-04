@@ -1,0 +1,38 @@
+.Icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 0 6px black);
+}
+
+.Icon:hover {
+  transform: scale(1.2);
+}
+
+.Icon-check {
+  position: static;
+  fill: #669a41;
+}
+
+.Icon-checkBlank {
+  position: static;
+  fill: #fff;
+}
+
+.Icon-checkBlank:hover {
+  fill: #669a41;
+}
+
+.Icon-delete {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  fill: #fff;
+}
+
+.Icon-delete:hover {
+  fill: #f44336;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import './TodoSearch.css';
-import searchIcon from './assets/icons/search.svg';
+import { BiSearch } from 'react-icons/bi';
 
 function TodoSearch({ searchValue, setSearchValue }) {
   return (
     <div className="search-container">
-      <img src={searchIcon} alt="search" className="search-icon" />
+      <BiSearch className="search-icon" />
       <input
         placeholder="Busca una tarea pendiente"
         className="search-input"
