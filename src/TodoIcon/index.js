@@ -1,6 +1,6 @@
-import { ReactComponent as CheckBlank } from './assets/icons/check_box_blank.svg';
-import { ReactComponent as Check } from './assets/icons/check_box.svg';
-import { ReactComponent as Delete } from './assets/icons/delete.svg';
+import { ReactComponent as CheckBlank } from './icons/check_box_blank.svg';
+import { ReactComponent as Check } from './icons/check_box.svg';
+import { ReactComponent as Delete } from './icons/delete.svg';
 import './TodoIcon.css';
 
 const iconTypes = {

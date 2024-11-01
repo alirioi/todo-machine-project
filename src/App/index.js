@@ -1,33 +1,13 @@
 import React from 'react';
 import './App.css';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoInput } from './CreateTodoInput';
-import { CreateTodoButton } from './CreateTodoButton';
-import taskImg from './assets/task-image.gif';
-
-function useLocalStorage(key, initialValue) {
-  const localStorageItem = localStorage.getItem(key);
-  let parsedItem;
-
-  if (!localStorageItem) {
-    localStorage.setItem(key, JSON.stringify(initialValue));
-    parsedItem = initialValue;
-  } else {
-    parsedItem = JSON.parse(localStorageItem);
-  }
-
-  const [item, setItem] = React.useState(parsedItem);
-
-  const saveItem = (newItem) => {
-    localStorage.setItem(key, JSON.stringify(newItem));
-    setItem(newItem);
-  };
-
-  return [item, saveItem];
-}
+import taskImg from './task-image.gif';
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { TodoItem } from '../TodoItem';
+import { CreateTodoInput } from '../CreateTodoInput';
+import { CreateTodoButton } from '../CreateTodoButton';
+import { useLocalStorage } from './useLocalStorage';
 
 function App() {
   const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
