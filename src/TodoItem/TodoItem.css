@@ -1,5 +1,5 @@
 .todo-item {
-  background: #444;
+  background: #575757;
   border-radius: 8px;
   padding: 12px;
   display: flex;
@@ -14,6 +14,7 @@
 .todo-item-text {
   width: calc(100% - 40px);
   font-weight: 100;
+  text-align: start;
 }
 
 .todo-item-text--completed {
