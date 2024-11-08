@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import taskImg from './task-image.gif';
 import { TodoCounter } from '../TodoCounter';
@@ -9,18 +10,12 @@ import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoInput } from '../CreateTodoInput';
 import { CreateTodoButton } from '../CreateTodoButton';
+import { TodoContext } from '../TodoContext';
 
-function AppUI({
-  loading,
-  error,
-  completedTodos,
-  totalTodos,
-  searchValue,
-  setSearchValue,
-  searchedTodos,
-  completeTodo,
-  deleteTodo,
-}) {
+function AppUI() {
+  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
+    React.useContext(TodoContext);
+
   return (
     <>
       <h1>TODO Machine</h1>
@@ -33,11 +28,8 @@ function AppUI({
 
         <section className="taskList-container">
           <h1 className="taskList-title">TODOs pendientes</h1>
-          <TodoCounter total={totalTodos} completed={completedTodos} />
-          <TodoSearch
-            searchValue={searchValue}
-            setSearchValue={setSearchValue}
-          />
+          <TodoCounter />
+          <TodoSearch />
 
           <TodoList>
             {loading && (
@@ -50,18 +42,15 @@ function AppUI({
             {error && <TodosError />}
             {!loading && searchedTodos.length === 0 && <EmptyTodos />}
 
-            {searchedTodos.map(
-              (todo) =>
-                (
-                  <TodoItem
-                    key={todo.text}
-                    text={todo.text}
-                    completed={todo.completed}
-                    onComplete={() => completeTodo(todo.text)}
-                    onDelete={() => deleteTodo(todo.text)}
-                  />
-                ) || <p>No hay TODOs que coincidan con tu búsqueda</p>
-            )}
+            {searchedTodos.map((todo) => (
+              <TodoItem
+                key={todo.text}
+                text={todo.text}
+                completed={todo.completed}
+                onComplete={() => completeTodo(todo.text)}
+                onDelete={() => deleteTodo(todo.text)}
+              />
+            ))}
           </TodoList>
         </section>
       </main>
