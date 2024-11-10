@@ -1,7 +1,14 @@
-label {
+.create-input-container {
   margin-bottom: 24px;
   color: #669a41;
   font-weight: bold;
+  width: 370px;
+  height: 430px;
+  background: #222;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .create-input {
@@ -17,4 +24,23 @@ label {
 .create-input::placeholder {
   font-family: 'Rubik', sans-serif;
   color: #9c9c9c;
+}
+
+.create-input-button {
+  background: #669a41;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.create-input-img {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
