@@ -7,7 +7,7 @@ import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
-import { CreateTodoInput } from '../CreateTodoInput';
+import { TodoForm } from '../TodoForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
@@ -55,7 +55,7 @@ function AppUI() {
 
         {openModal && (
           <Modal>
-            <CreateTodoInput />
+            <TodoForm />
           </Modal>
         )}
       </main>

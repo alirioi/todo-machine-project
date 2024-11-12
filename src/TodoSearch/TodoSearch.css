@@ -1,10 +1,10 @@
-.search-container {
+.TodoSearch-container {
   width: 350px;
   margin-bottom: 30px;
   position: relative;
 }
 
-.search-input {
+.TodoSearch-input {
   background: #333;
   color: #fff;
   border-radius: 12px;
@@ -14,20 +14,25 @@
   padding-left: 45px;
 }
 
-.search-input::placeholder {
-  font-family: 'Rubik', sans-serif;
+.TodoSearch-input::placeholder {
   color: #9c9c9c;
 }
 
-input:focus {
+.TodoSearch-input:focus {
   outline-color: #56cd02;
 }
 
-.search-icon {
+.TodoSearch-icon {
   height: 37px;
   width: 37px;
   padding: 6px;
   position: absolute;
   left: 5px;
   color: #669a41;
+}
+
+@media (max-width: 576px) {
+  .TodoSearch-container {
+    width: 300px;
+  }
 }

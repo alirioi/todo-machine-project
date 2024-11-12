@@ -7,11 +7,11 @@ function TodoSearch() {
   const { searchValue, setSearchValue } = React.useContext(TodoContext);
 
   return (
-    <div className="search-container">
-      <BiSearch className="search-icon" />
+    <div className="TodoSearch-container">
+      <BiSearch className="TodoSearch-icon" />
       <input
         placeholder="Busca una tarea pendiente"
-        className="search-input"
+        className="TodoSearch-input"
         value={searchValue}
         onChange={(event) => {
           setSearchValue(event.target.value);

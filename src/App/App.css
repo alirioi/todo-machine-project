@@ -19,3 +19,12 @@ h1 {
 p {
   text-align: center;
 }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 44px;
+  }
+  main {
+    width: 100%;
+  }
+}

@@ -1,5 +1,4 @@
-.create-input-container {
-  margin-bottom: 24px;
+.TodoForm-container {
   color: #669a41;
   font-weight: bold;
   width: 370px;
@@ -9,38 +8,57 @@
   padding: 40px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.create-input {
+.TodoForm-input {
   background: #333;
   color: #fff;
   border-radius: 12px;
   border: 1px solid #669a41;
   padding: 10px;
-  width: 100%;
-  margin: 8px 0 24px;
+  min-height: 52px;
+  max-width: 100%;
+  min-width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.create-input::placeholder {
-  font-family: 'Rubik', sans-serif;
+.TodoForm-input::placeholder {
   color: #9c9c9c;
 }
 
-.create-input-button {
+.TodoForm-buttons-container {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.TodoForm-button {
   background: #669a41;
   color: #fff;
   border-radius: 12px;
   border: none;
   padding: 12px 24px;
-  font-weight: bold;
+  font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.create-input-img {
-  width: 75%;
+.TodoForm-button--cancel {
+  background: #575757;
+  color: #fff;
+}
+
+.TodoForm-img {
+  width: 60%;
   position: absolute;
   bottom: 0;
   right: 0;
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
+  z-index: 0;
 }
