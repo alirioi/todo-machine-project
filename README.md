@@ -1,12 +1,29 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# TODO MACHINE
 
-¡Hola, Platzinauta!
+## Descripción
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+Todo Machine es una sencilla aplicación web diseñada para ayudarte a gestionar tus tareas diarias. Construida con HTML, CSS, JavaScript y React, esta aplicación te permite crear una lista de tareas, filtrarlas por texto, marcarlas como completadas y eliminarlas.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+## Características principales
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+* **Creación de tareas:** Agrega nuevas tareas a tu lista de manera rápida y sencilla.
+* **Marcado de tareas:** Marca las tareas como completadas para llevar un seguimiento de tu progreso.
+* **Eliminación de tareas:** Elimina las tareas que ya no son relevantes.
+* **Persistencia de datos:** Tus tareas se guardan localmente en tu navegador, por lo que estarán disponibles incluso si cierras y vuelves a abrir la aplicación.
+* **Pantalla de carga:** Una breve animación de carga mejora la experiencia del usuario al iniciar la aplicación.
+
+## Tecnologías utilizadas
+
+* **HTML:** Estructura básica de la página.
+* **CSS:** Estilos y diseño de la interfaz.
+* **JavaScript:** Lógica de la aplicación.
+* **React:** Biblioteca de JavaScript para crear interfaces de usuario.
+
+## Deploy
+En la rama gh-pages: [Todo Machine](https://alirioi.github.io/todo-machine-project/ "Todo Machine")
+
+###### Autor:
+Alirio Isea 
 
 ## Getting Started with Create React App
 
