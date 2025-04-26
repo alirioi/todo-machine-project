@@ -6,24 +6,26 @@ Todo Machine es una sencilla aplicación web diseñada para ayudarte a gestionar
 
 ## Características principales
 
-* **Creación de tareas:** Agrega nuevas tareas a tu lista de manera rápida y sencilla.
-* **Marcado de tareas:** Marca las tareas como completadas para llevar un seguimiento de tu progreso.
-* **Eliminación de tareas:** Elimina las tareas que ya no son relevantes.
-* **Persistencia de datos:** Tus tareas se guardan localmente en tu navegador, por lo que estarán disponibles incluso si cierras y vuelves a abrir la aplicación.
-* **Pantalla de carga:** Una breve animación de carga mejora la experiencia del usuario al iniciar la aplicación.
+- **Creación de tareas:** Agrega nuevas tareas a tu lista de manera rápida y sencilla.
+- **Marcado de tareas:** Marca las tareas como completadas para llevar un seguimiento de tu progreso.
+- **Eliminación de tareas:** Elimina las tareas que ya no son relevantes.
+- **Persistencia de datos:** Tus tareas se guardan localmente en tu navegador, por lo que estarán disponibles incluso si cierras y vuelves a abrir la aplicación.
+- **Pantalla de carga:** Una breve animación de carga mejora la experiencia del usuario al iniciar la aplicación.
 
 ## Tecnologías utilizadas
 
-* **HTML:** Estructura básica de la página.
-* **CSS:** Estilos y diseño de la interfaz.
-* **JavaScript:** Lógica de la aplicación.
-* **React:** Biblioteca de JavaScript para crear interfaces de usuario.
+- **HTML:** Estructura básica de la página.
+- **CSS:** Estilos y diseño de la interfaz.
+- **JavaScript:** Lógica de la aplicación.
+- **React:** Biblioteca de JavaScript para crear interfaces de usuario.
 
 ## Deploy
-En la rama gh-pages: [Todo Machine](https://alirioi.github.io/todo-machine-project/ "Todo Machine")
+
+Netlify: [Todo Machine](https://alirioi.dev/todo-machine "Todo Machine")
 
 ###### Autor:
-Alirio Isea 
+
+Alirio Isea
 
 ## Getting Started with Create React App
 
